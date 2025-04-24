@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Currency Convertor</title>
+		<link rel="stylesheet" href="./style.css">
+
+	</head>
+
+	<body>
+		
+		<div class="header">
+			<div class="header-container">
+				<div class="hamburger-menu">
+					<img src="/img/hamburger.svg" alt="Hamburger-Menu">
+				</div>
+				<img src="/img/bank-logo.svg" alt="bank-logo" class="img">
+
+				<ul class="nav-bar">
+					<li class="nav-links bank">БАНК</li>
+					<li class="nav-links">БИЗНЕС</li>
+					<li class="nav-links">ИНВЕСТИЦИИ</li>
+					<li class="nav-links">СТРАХОВАНИЕ</li>
+					<li class="nav-links">МОБАЙЛ</li>
+					<li class="nav-links">ПУТЕШЕСТВИЯ</li>
+					<li class="nav-links">РАЗВЛЕЧЕНИЯ</li>
+					<li class="nav-links login">ВОЙТИ</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main1">
+			<div class="currency-converter">
+				<h1 class="title">Конвертер валют онлайн</h1>
+				<div class="convertors">
+					<div class="conversion-form">
+						<p class="text">У меня есть</p>
+						<div class="container-inputs">
+							<button class="buttons from from-focused" value="RUB">RUB</button>
+							<button class="buttons from" value="USD">USD</button>
+							<button class="buttons from" value="EUR">EUR</button>
+							<button class="buttons from" value="GBP">GBP</button>
+						</div>
+						<div class="pair-input">
+							<form action="#">
+								<input type="text" class="amount" value="5000">
+							</form>
+							<p class="currency-label"></p>
+						</div>
+					</div>
+					<div class="conversion-result">
+						<p class="text">Хочу приобрести</p>
+						<div class="container-inputs">
+							<button class="buttons to" value="RUB">RUB</button>
+							<button class="buttons to to-focused" value="USD">USD</button>
+							<button class="buttons to" value="EUR">EUR</button>
+							<button class="buttons to" value="GBP">GBP</button>
+						</div>
+						<div class="pair-input">
+							<input type="text" class="result">
+							<p class="exchange-label"></p>
+						</div>
+					</div>
+					<div class="error-status">
+						<div class="error-box">
+							<h1 class="message-text">
+								Network problem!
+							</h1>
+							<p class="description-text">
+								Please ,checking your internet connection
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		<script src="./app.js"></script>
+	</body>
+</html>
