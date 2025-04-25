@@ -10,7 +10,7 @@ let fromValue = 'RUB';
 let toValue = 'USD';
 let activeInput = 'amount';
 
-let apikey = '6c56568c38f367c072e3592e';
+let apikey = '91c14d533bfd05766e918e35';
 let url = 'https://v6.exchangerate-api.com/v6';
 
 document.addEventListener('DOMContentLoaded', function () {
